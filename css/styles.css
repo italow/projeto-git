@@ -57,6 +57,7 @@ html{
     width: 50px;
     height: 50px;
     margin-top: 15px;
+    margin-left: -35px;
   }
 
   .nav-container ul{
@@ -337,12 +338,11 @@ html{
     }
 
     .light-btn{
-      background-color: #3381f3;  
-      border: 1px solid #666;
+      background-color: #666;  
       color: black;
-      position: absolute;
-      margin-left: 85%;
-      margin-right: 5%;
+      position: relative;
+      float: right;
+      margin-right: 4%;
       font-weight: bold;
       text-transform: uppercase;
       padding: 10px 20px;
@@ -352,7 +352,7 @@ html{
     }
 
     .light-btn:hover{
-      background-color: transparent;  
+      background-color: #CCC;  
     }
     
   /* jobfinder status*/
@@ -368,7 +368,7 @@ html{
   }
 
   .p-center{
-    width: 80%;
+    width: 90%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -397,7 +397,7 @@ html{
     font-size: 36px;
   }
 
-  .status-text{
+  .p status-text{
     font-size: 20px;
   }
 
@@ -433,8 +433,8 @@ html{
 #testmony-container .testmony-box .testmony-msg {
 	background-color: #FFF;
   color: #666;  
-	border-radius: 10px;
-	padding: 20px;
+  border-radius: 10px;
+  padding: 20px;
 	width: 50%;
 	position: relative;
 	margin: 10px auto;
@@ -465,13 +465,10 @@ html{
   margin-top: 25px;
 }
 
-.testmony-name {
+.testmony-name{
   font-weight: bold;
+  text-shadow: #666 1px 1px;
   padding-top: 10px;
-  color: #666;
-  background-color: #FFF;
-  border-radius: 5px;
-  border: 1.5px solid #666;
   padding: 5px;
   width: auto;
   margin: 0 60px;
@@ -516,6 +513,7 @@ html{
 .article-date{
   font-size: 12px;
   margin-bottom: 15px;
+  margin-right: 10px;
 }
 
 .article-resume{
@@ -536,7 +534,7 @@ html{
 /* footer */
 footer {
 	background-color: #666;
-	padding: 5em 0;
+	padding: 3em 0;
 	padding-bottom: 40px;
 	border-top: 5px solid #3381f3;
 }
@@ -567,6 +565,12 @@ footer li {
 	float: left;
 }
 
+.footer-box:first-child{
+	width: 31%;
+	padding: 1%;
+  text-align: center;
+}
+
 footer .wrapper:after {
 	clear: both;
 	content: "";
@@ -577,12 +581,13 @@ footer .wrapper:after {
 	width: 80%;
 }
 
-.company-footer h2 {
-	margin-top: 20px;
+.company-footer h2, .company-footer p {
+  margin-bottom: 10px;
 }
 
-.company-footer h2, .company-footer p {
-	margin-bottom: 20px;
+.company-footer img{
+  width: 180px;
+  height: 180px;
 }
 
 .footer-list li {
@@ -702,6 +707,10 @@ footer .wrapper:after {
 
   .company-box.company-info p, .locality i, .locality p, .job-type span{
     font-size: 0.8em;
+  }
+
+  .company-box img{
+    margin: 20px auto;
   }
 
   .job-type{
@@ -835,20 +844,90 @@ footer .wrapper:after {
     font-size: .8em;
   }
 
+  .company-box img{
+    margin: 20px auto;
+  }
+
   .job-type{
     width: 22%;
   }
 
   .light-btn{
-    margin-left: 68%;
-    margin-right: 2em;
-    font-size: 12px;
-    padding: 0.8em;   
-    margin-top: -2em;
+    margin: 1em 36%;
+    font-size: 0.9em;
+    padding: 0.8em;
+    width: 100px;
+   }
+
+  #sendjobs-container{
+    background-position: 35% 0;
+    padding: 8em 0;
+    }
+  
+  #sendjobs-container h2{
+    font-size: 1.5em;
+    width: 80%;
+    text-align: center;
+    margin: -1.5em auto 1em;
   }
 
-  #sendjobs-container h2, #sendjobs-container p{
-    margin-right: 5em;
+  #sendjobs-container p{
+    font-size: 1em;
+    width: 80%;
+    text-align: justify;
+    margin: 1em auto;
+  }
+
+  .status-box:nth-child(2), .status-box:nth-child(4) {
+    border-left: none;
+  }
+
+  .status-box:nth-child(1), .status-box:nth-child(2), .status-box:nth-child(3) {
+    border-bottom: 1px solid #ddd;
     }
+
+  .p status-text{
+   font-size: 16px;
+  }
+
+  .status-box{
+    width: 60%;
+    border: none;
+    margin-top: 2em;
+    margin-bottom: -1em;
+  }
+
+  #testmony-container{
+    padding: 5em 0;
+  }
+
+  .testmony-box{
+    width: 100%;
+  }
+
+  #testmony-container p{
+    margin-bottom: 1em;
+  }
+
+  .footer-box{
+    display: block;
+    width: 100%;
+  }
+
+  .company-footer{
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  .footer-box:first-child {
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .company-footer h2 {
+    margin-top: 0;
+}
 }
 }
